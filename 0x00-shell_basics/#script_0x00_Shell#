@@ -64,7 +64,7 @@ echo "mv [[:upper:]]* /tmp/u" >> 100-lets_move
 chmod 755 100-lets_move
 
 echo "#!/bin/bash" > 101-clean_emacs
-echo "" >> 101rm *~-clean_emacs
+echo "rm *~" >> 101-clean_emacs
 chmod 755 101-clean_emacs
 
 echo "#!/bin/bash" > 102-tree
