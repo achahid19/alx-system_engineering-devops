@@ -72,7 +72,7 @@ echo "mkdir -p welcome{,/to{,/school}}" >> 102-tree
 chmod 755 102-tree
 
 echo "#!/bin/bash" > 103-commas
-echo "ls -xamp" > 103-commas
+echo "ls -xamp" >> 103-commas
 chmod 755 103-commas
 
 echo "0 string SCHOOL School data" > school
