@@ -12,7 +12,7 @@ echo "cd" >> 2-bring_me_home
 chmod 755 2-bring_me_home
 
 echo "#!/bin/bash" > 3-lifetfiles
-echo "ls -l" >> 3-lifetfiles
+echo "ls -l" >> 3-listfiles
 chmod 755 3-lifetfiles
 
 echo "#!/bin/bash" > 4-listmorefiles
@@ -32,7 +32,7 @@ echo "mv /tmp/betty /tmp/my_first_directory" >> 7-movethatfile
 chmod 755 7-movethatfile
 
 echo "#!/bin/bash" > 8-firstdelete
-echo "rm /tmp/my_first_directory" >> 8-firstdelete
+echo "rm /tmp/my_first_directory/betty" >> 8-firstdelete
 chmod 755 8-firstdelete
 
 echo "#!/bin/bash" > 9-firstdirdeletion
@@ -48,7 +48,7 @@ echo "ls -al . .. /boot" >> 11-lists
 chmod 755 11-lists
 
 echo "#!/bin/bash" > 12-file_type
-echo "file /tmp/imafile" >> 12-file_type
+echo "file /tmp/iamafile" >> 12-file_type
 chmod 755 12-file_type
 
 echo "#!/bin/bash" > 13-symbolic_link
@@ -60,7 +60,7 @@ echo "cp -u *.html .." >> 14-copy_html
 chmod 755 14-copy_html
 
 echo "#!/bin/bash" > 100-lets_move
-echo "mv [[:upper]]* /tmp/u" >> 100-lets_move
+echo "mv [[:upper:]]* /tmp/u" >> 100-lets_move
 chmod 755 100-lets_move
 
 echo "#!/bin/bash" > 101-clean_emacs
