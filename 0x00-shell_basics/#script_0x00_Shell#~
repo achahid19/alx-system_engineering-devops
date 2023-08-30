@@ -1,0 +1,53 @@
+#!/bin/bash
+echo "#!/bin/bash" > 0-current_working_directory
+echo "pwd" >> 0-current_working_directory
+chmod 755 0-current_working_directory
+
+echo "#!/bin/bash" > 1-listit
+echo "ls" >> 1-listit
+chmod 755 1-listit
+
+echo "#!/bin/bash" > 2-bring_me_home
+echo "cd" >> 2-bring_me_home
+chmod 755 2-bring_me_home
+
+echo "#!/bin/bash" > 3-lifetfiles
+echo "ls -l" >> 3-lifetfiles
+chmod 755 3-lifetfiles
+
+echo "#!/bin/bash" > 4-listmorefiles
+echo "ls -la" >> 4-listmorefiles
+chmod 755 4-listmorefiles
+
+echo "#!/bin/bash" > 5-listfilesdigitonly
+echo "ls -aln" >> 5-listfilesdigitonly
+chmod 755 5-listfilesdigitonly
+
+echo "#!/bin/bash" > 6-firstdirectory
+echo "mkdir /tmp/my_first_directory" >> 6-firstdirectory
+chmod 755 6-firstdirectory
+
+echo "#!/bin/bash" > 7-movethatfile
+echo "mv /tmp/betty /tmp/my_first_directory" >> 7-movethatfile
+chmod 755 7-movethatfile
+
+echo "#!/bin/bash" > 8-firstdelete
+echo "rm /tmp/my_first_directory" >> 8-firstdelete
+chmod 755 8-firstdelete
+
+echo "#!/bin/bash" > 9-firstdirdeletion
+echo "rm -r /tmp/my_first_directory" >> 9-firstdirdeletion
+chmod 755 9-firstdirdeletion
+
+echo "#!/bin/bash" > 10-back 0
+echo "" >>
+chmod 755
+
+
+echo "#!/bin/bash"
+echo "" >>
+chmod 755
+
+
+
+
