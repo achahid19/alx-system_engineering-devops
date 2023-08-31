@@ -37,7 +37,7 @@ echo "chmod 007 hello" >> 8-James_Bond
 chmod 755 8-James_Bond
 
 echo "#!/bin/bash" > 9-John_Doe
-echo "chmod 753" >> 9-John_Doe
+echo "chmod 753 hello" >> 9-John_Doe
 chmod 755 9-John_Doe
 
 echo "#!/bin/bash" > 10-mirror_permissions
