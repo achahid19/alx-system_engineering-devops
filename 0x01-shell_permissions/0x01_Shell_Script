@@ -1,0 +1,73 @@
+#!/bin/bash
+
+echo "#!/bin/bash" > 0-iam_betty
+echo "su betty" >> 0-iam_betty
+chmod 755 0-iam_betty
+
+echo "#!/bin/bash" > 1-who_am_i
+echo "whoami" >> 1-who_am_i
+chmod 755 1-who_am_i
+
+echo "#!/bin/bash" > 2-groups
+echo "groups" >> 2-groups
+chmod 755 2-groups
+
+echo "#!/bin/bash" > 3-new_owner
+echo "chown betty hello" >> 3-new_owner
+chmod 755 3-new_owner
+
+echo "#!/bin/bash" > 4-empty
+echo "touch hello" >> 4-empty
+chmod 755 4-empty
+
+echo "#!/bin/bash" > 5-execute
+echo "chmod u+x hello" >> 5-execute
+chmod 755 5-execute
+
+echo "#!/bin/bash" > 6-multiple_permissions
+echo "chmod u+x,g+x,o+r hello" >> 6-multiple_permissions
+chmod 755 6-multiple_permissions 
+
+echo "#!/bin/bash" > 7-everybody
+echo "chmod a+x hello" >> 7-everybody
+chmod 755 7-everybody
+
+echo "#!/bin/bash" > 8-James_Bond
+echo "chmod 007 hello" >> 8-James_Bond
+chmod 755 8-James_Bond
+
+echo "#!/bin/bash" > 9-John_Doe
+echo "chmod 753" >> 9-John_Doe
+chmod 755 9-John_Doe
+
+echo "#!/bin/bash" > 10-mirror_permissions
+echo "chmod --reference=olleh hello" >> 10-mirror_permissions
+chmod 755 10-mirror_permissions
+
+echo "#!/bin/bash" > 11-directories_permissions
+echo "find . -type d -exec chmod a+x {} +" >> 11-directories_permissions
+chmod 755 11-directories_permissions
+
+echo "#!/bin/bash" > 12-directory_permissions
+echo "mkdir -m 751 my_dir" >> 12-directory_permissions
+chmod 755 12-directory_permissions
+
+echo "#!/bin/bash" > 13-change_group
+echo "chgrp school hello" >> 13-change_group
+chmod 755 13-change_group
+
+echo "#!/bin/bash" > 100-change_owner_and_group
+echo "sudo chown -R vincent:staff ./*" >> 100-change_owner_and_group
+chmod 755 100-change_owner_and_group
+
+echo "#!/bin/bash" > 101-symbolic_link_permissions
+echo "sudo chown -h vincent:staff _hello" >> 101-symbolic_link_permissions
+chmod 755 101-symbolic_link_permissions
+
+echo "#!/bin/bash" > 102-if_only
+echo "sudo chown --from=guillaume betty hello" >> 102-if_only
+chmod 755 102-if_only
+
+echo "#!/bin/bash" > 103-Star_Wars
+echo "telnet towel.blinkenlights.nl" >> 103-Star_Wars
+chmod 755 103-Star_Wars
